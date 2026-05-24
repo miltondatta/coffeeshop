@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl *)",
+      "WebSearch",
+      "WebFetch(domain:www.pexels.com)",
+      "Bash(Get-ChildItem -Path \"E:\\\\claude_projects\\\\coffee-shop\" -Recurse -Force)",
+      "Bash(Select-Object -Property FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(ConvertTo-Json)"
+    ]
+  }
+}

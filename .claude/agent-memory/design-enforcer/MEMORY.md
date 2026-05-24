@@ -1,0 +1,1 @@
+- [Project audit patterns](project_audit_patterns.md) — Violation patterns found in May 2026 baseline audit of all 12 Brew & Co. components

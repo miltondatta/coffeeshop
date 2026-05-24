@@ -1,0 +1,50 @@
+category,name,description,price,badge
+Espresso,Espresso,A single concentrated shot of rich dark-roasted espresso with a golden crema,3.75,
+Espresso,Double Espresso,Two back-to-back shots for a bolder and more intense espresso experience,4.50,House Favorite
+Espresso,Americano,Espresso shots pulled long with hot water for a smooth and clean cup,4.25,
+Espresso,Cappuccino,Equal parts espresso and silky steamed milk finished with a thick dome of foam,5.25,Popular
+Espresso,Flat White,Ristretto shots with a thin layer of velvety microfoam — less milk more espresso,5.50,House Favorite
+Espresso,Latte,Double espresso with generous steamed milk and a whisper of foam on top,5.75,Popular
+Espresso,Cortado,Equal pull of espresso and warm milk to cut the acidity without losing the body,5.00,
+Espresso,Macchiato,A double shot of espresso lightly stained with a dollop of foamed milk,4.75,
+Espresso,Mocha,Espresso blended with rich dark chocolate sauce and topped with steamed milk,6.25,Popular
+Espresso,Espresso con Panna,A double shot of espresso crowned with a generous swirl of fresh whipped cream,5.25,Staff Pick
+Espresso,Caramel Latte,Smooth double-shot latte swirled with house-made salted caramel sauce,6.50,Popular
+Espresso,Hazelnut Cortado,A cortado kissed with toasted hazelnut syrup and a dusting of cinnamon,5.75,Seasonal
+Espresso,Honey Oat Latte,Double espresso with oat milk and a swirl of raw wildflower honey,6.25,New
+Espresso,Vanilla Latte,Classic double-shot latte sweetened with real Madagascar vanilla bean syrup,6.00,
+Espresso,Cardamom Cappuccino,Spiced cappuccino with freshly ground green cardamom and a hint of rose water,5.75,House Favorite
+Cold Drinks,Iced Latte,Double espresso chilled over ice and floated with cold whole milk,5.75,Popular
+Cold Drinks,Cold Brew,Coarsely ground beans steeped in cold water for 18 hours — smooth with low acidity,5.50,House Favorite
+Cold Drinks,Nitro Cold Brew,Cold brew infused with nitrogen for a creamy cascading texture straight from the tap,6.25,Popular
+Cold Drinks,Iced Americano,Shots pulled hot then poured over ice and topped with cold still water,4.75,
+Cold Drinks,Iced Mocha,Cold espresso blended with chocolate sauce shaken with ice and topped with cold milk,6.50,
+Cold Drinks,Iced Matcha Latte,Ceremonial-grade matcha whisked smooth with oat milk over a bed of ice,6.00,New
+Cold Drinks,Caramel Frappuccino,Blended espresso with caramel sauce milk and ice finished with whipped cream,7.50,Popular
+Cold Drinks,Chocolate Mudslide Shake,Thick chocolate shake blended with espresso dark cocoa and a ribbon of fudge,7.75,House Favorite
+Cold Drinks,Strawberry Lemonade,Fresh-squeezed lemonade muddled with ripe strawberries and a sprig of mint,5.25,Seasonal
+Cold Drinks,Hibiscus Iced Tea,Tart dried hibiscus brewed cold and sweetened lightly with agave nectar,4.75,Vegan
+Cold Drinks,Sparkling Cascara,Cascara tea made from dried coffee cherry husks topped with sparkling water,5.00,Staff Pick
+Cold Drinks,Iced Chai Latte,Bold spiced chai concentrate shaken with whole milk and poured over ice,5.75,
+Pastries,Butter Croissant,Layers of laminated dough baked to a deep amber with a shatteringly crisp exterior,3.75,Popular
+Pastries,Almond Croissant,Day-old croissant soaked in rum syrup filled with almond cream and toasted flakes,4.75,House Favorite
+Pastries,Pain au Chocolat,Flaky croissant dough wrapped around two batons of 72% dark Belgian chocolate,4.50,Popular
+Pastries,Blueberry Muffin,Towering muffin bursting with wild blueberries and topped with crunchy sugar streusel,4.25,
+Pastries,Banana Bread,Moist loaf made with overripe bananas brown butter and a ribbon of walnut,4.00,House Favorite
+Pastries,Morning Bun,Spiral pastry rolled in cinnamon sugar with a hint of orange zest,4.50,Staff Pick
+Pastries,Cardamom Cinnamon Roll,Giant pillowy roll swirled with cardamom butter and glazed with cream cheese icing,5.75,Popular
+Pastries,Matcha Kouign-Amann,Caramelized Breton pastry with a swirl of ceremonial matcha and sea salt,5.25,New
+Pastries,Lemon Poppy Seed Scone,Crumbly scone with bright lemon zest and poppy seeds drizzled with a citrus glaze,4.25,
+Pastries,Pistachio Financier,Buttery French almond cake enriched with roasted pistachio paste and honey,4.50,Seasonal
+Pastries,Double Chocolate Brownie,Dense fudge brownie with two types of chocolate and a flaky sea salt finish,4.75,Popular
+Pastries,Classic Shortbread,Crisp Scottish-style biscuit made with just butter sugar and flour — and nothing else,3.25,
+Sandwiches,Avocado Toast,Thick-cut sourdough with smashed avocado lemon zest red pepper flake and microgreens,10.50,Popular
+Sandwiches,Egg & Aged Cheddar Croissant,Soft scrambled egg and sharp aged cheddar tucked inside a warm butter croissant,9.75,House Favorite
+Sandwiches,Smoked Salmon Bagel,Everything bagel with whipped cream cheese cucumber dill capers and smoked salmon,13.50,Staff Pick
+Sandwiches,Turkey & Brie,Shaved turkey breast with creamy brie grain mustard and sliced apple on walnut bread,12.75,
+Sandwiches,Caprese Panini,Fresh mozzarella heirloom tomato and basil pesto pressed on house-made focaccia,11.00,Vegan
+Sandwiches,BLT with Chipotle Mayo,Applewood-smoked bacon with butter lettuce tomato and smoky chipotle aioli on brioche,11.50,Popular
+Sandwiches,Mushroom & Gruyère Melt,Sautéed wild mushrooms caramelized onions and melted gruyère on dark rye,11.25,House Favorite
+Sandwiches,Chicken Pesto Club,Sliced roasted chicken with sun-dried tomato pesto arugula and provolone on ciabatta,13.00,
+Sandwiches,Ham & Swiss Croissant,Honey-glazed ham and Swiss cheese warmed in a freshly baked butter croissant,10.25,
+Sandwiches,Veggie Hummus Wrap,Roasted red pepper zucchini spinach and house hummus rolled in a whole-wheat tortilla,9.50,Vegan
