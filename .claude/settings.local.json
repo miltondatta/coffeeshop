@@ -8,7 +8,9 @@
       "Bash(Get-ChildItem -Path \"E:\\\\claude_projects\\\\coffee-shop\" -Recurse -Force)",
       "Bash(Select-Object -Property FullName, PSIsContainer)",
       "Bash(Sort-Object FullName)",
-      "Bash(ConvertTo-Json)"
+      "Bash(ConvertTo-Json)",
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(npm install *)"
     ]
   }
 }

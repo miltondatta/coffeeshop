@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import N8nChat from "./components/N8nChat";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} h-full antialiased`}>
       <body suppressHydrationWarning className="min-h-full flex flex-col bg-cream-100 font-display text-brown-900">
         {children}
+        <N8nChat />
       </body>
     </html>
   );
