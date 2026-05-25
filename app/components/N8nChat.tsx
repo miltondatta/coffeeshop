@@ -86,6 +86,7 @@ export default function N8nChat() {
           en: {
             title: 'Brew & Bloom',
             subtitle: 'Your coffee companion — here to help anytime.',
+            footer: '',
             inputPlaceholder: 'Ask about our menu, hours, specials...',
             getStarted: 'Start a Conversation',
             closeButtonTooltip: 'Close chat',
