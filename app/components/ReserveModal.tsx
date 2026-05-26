@@ -28,6 +28,13 @@ interface Props {
 export default function ReserveModal({ onClose }: Props) {
   const [mounted, setMounted] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const [name, setName] = useState("");
+  const [partySize, setPartySize] = useState("");
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
 
   useEffect(() => {
     setMounted(true);
@@ -48,9 +55,35 @@ export default function ReserveModal({ onClose }: Props) {
     };
   }, []);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setError(null);
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/reserve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          guestName: name,
+          groupSize: partySize,
+          bookingTime: `${date} at ${time}`,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.error ?? "Something went wrong. Please try again.");
+        return;
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (!mounted) return null;
@@ -145,7 +178,13 @@ export default function ReserveModal({ onClose }: Props) {
               </p>
             </div>
 
-            <TextInput label="Full Name" required placeholder="Jane Smith" />
+            <TextInput
+              label="Full Name"
+              required
+              placeholder="Jane Smith"
+              value={name}
+              onChange={setName}
+            />
             <TextInput
               label="Email"
               type="email"
@@ -159,12 +198,16 @@ export default function ReserveModal({ onClose }: Props) {
                 required
                 options={partySizeOptions}
                 placeholder="Select size"
+                value={partySize}
+                onChange={setPartySize}
               />
               <FormField label="Date" htmlFor="reserve-date" required>
                 <input
                   id="reserve-date"
                   type="date"
                   required
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
                   className="h-11 w-full rounded-md border border-cream-300 bg-white px-4
                              text-body-md text-brown-900
                              transition-all duration-200
@@ -179,6 +222,8 @@ export default function ReserveModal({ onClose }: Props) {
               required
               options={timeOptions}
               placeholder="Select a time"
+              value={time}
+              onChange={setTime}
             />
 
             <Textarea
@@ -188,13 +233,19 @@ export default function ReserveModal({ onClose }: Props) {
               rows={3}
             />
 
+            {error && (
+              <p className="text-body-sm text-terracotta-500 text-center">{error}</p>
+            )}
+
             <button
               type="submit"
+              disabled={loading}
               className="h-12 w-full rounded-pill bg-brown-950 text-white font-semibold
                          hover:bg-brown-800 transition-all duration-200
+                         disabled:opacity-60 disabled:cursor-not-allowed
                          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-terracotta-500"
             >
-              Confirm Reservation
+              {loading ? "Confirming…" : "Confirm Reservation"}
             </button>
           </form>
         )}
