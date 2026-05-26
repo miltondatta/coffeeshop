@@ -3,6 +3,17 @@ import { NextRequest, NextResponse } from 'next/server';
 const N8N_WEBHOOK_URL =
   'https://n8n.vistechsolutions.org/webhook/67ea2785-0e17-46c8-b43b-919ec18d188a/chat';
 
+function fixCurrency(data: unknown): unknown {
+  if (typeof data === 'string') return data.replace(/£/g, '$');
+  if (Array.isArray(data)) return data.map(fixCurrency);
+  if (data && typeof data === 'object') {
+    return Object.fromEntries(
+      Object.entries(data as Record<string, unknown>).map(([k, v]) => [k, fixCurrency(v)])
+    );
+  }
+  return data;
+}
+
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
@@ -13,7 +24,7 @@ export async function POST(req: NextRequest) {
   });
 
   const data = await upstream.json();
-  return NextResponse.json(data, { status: upstream.status });
+  return NextResponse.json(fixCurrency(data), { status: upstream.status });
 }
 
 export async function GET(req: NextRequest) {
@@ -23,5 +34,5 @@ export async function GET(req: NextRequest) {
 
   const upstream = await fetch(url, { method: 'GET' });
   const data = await upstream.json();
-  return NextResponse.json(data, { status: upstream.status });
+  return NextResponse.json(fixCurrency(data), { status: upstream.status });
 }
