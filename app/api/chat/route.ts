@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const N8N_WEBHOOK_URL =
-  'https://n8n.vistechsolutions.org/webhook/93013e35-d3ef-4798-8ba4-dd21e4621315/chat';
+  'https://n8n.vistechsolutions.org/webhook/67ea2785-0e17-46c8-b43b-919ec18d188a/chat';
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
