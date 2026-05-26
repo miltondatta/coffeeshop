@@ -20,13 +20,13 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 lg:px-24 py-20">
-        <div className="max-w-xl">
+        <div>
           <span className="inline-block mb-5 text-label font-semibold tracking-widest uppercase text-terracotta-300">
             Brooklyn, NY — Est. 2018
           </span>
 
-          <h1 className="text-display-xl leading-tight font-extrabold text-white mb-6">
-            Where Every Cup<br className="hidden sm:block" /> Tells a Story
+          <h1 className="text-display-2xl leading-tight font-extrabold text-white mb-6 whitespace-nowrap">
+            Where <span className="text-terracotta-300 italic">Every Cup</span> Tells a Story
           </h1>
 
           <p className="text-body-lg text-cream-200 leading-normal mb-10 max-w-[38rem]">
